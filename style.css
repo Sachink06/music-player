@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 85%;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    padding: 5vw 10vw;
+}
+
+#left{
+    /* background-image: url(https://imgs.search.brave.com/vJ7E4XCFwuj-vCI8sIXIboCvZVnubvmF-yOGIOYM8J4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZmlsbWliZWF0LmNv/bS9waC1iaWcvMjAy/My8wMS9hbmltYWwt/MjAyM18xNjcyNjQ5/NDE1MTAuanBn); */
+    background-size: cover;
+    background-position: center;
+    width: 45%;
+    height: 100%;
+    margin-right: 2vw;
+}
+
+#right{
+    /* background-color: red; */
+    width: 55%;
+    height: 100%;
+    padding: 0 3vw;
+}
+#right h3{
+    font-size: 20px;
+}
+
+#all-songs{
+    height: 85%;
+    overflow-y: scroll;
+    /* background-color: brown; */
+}
+
+.song-card {
+    margin-top: 5px;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #6d6b6bbe;
+    
+}
+
+.song-card:hover{
+    background-color: rgb(68, 68, 68);
+}
+
+.song-card:nth-last-child(1){
+    border-bottom: 1px solid #6d6b6bbe;
+}
+
+.song-card #part1{
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.song-card img{
+    height: 50px;
+    width: 50px;
+    margin-right: 1.5vw;
+}
+
+.song-card h3{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.song-card h6{
+    font-size: 14px;
+}
+
+#player{
+    height: 15%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+#player h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    background-color: rgb(77, 77, 77);
+    border-radius: 50%;
+}
+
+#player h3:active{
+    scale: 0.8;
+}
+
+#player i{
+    font-size: 22px;
+}
